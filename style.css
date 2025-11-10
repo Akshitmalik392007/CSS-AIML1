@@ -1,10 +1,120 @@
-p{
-    color:blue;
-}
-.p{
+ /* p{
+    color:rgb(0, 255, 21);
+} */
+/*.p{
     color:aqua;
     background-color:brown;
 }
 #jk{
     font_size: 30px;
 }
+div{
+    height: 200px;
+    width: 200px;
+    padding: 20px;
+    margin: 20px;
+} */
+ /* div{
+    height: 150px;
+    width: 150px;
+    padding: 100px;
+    background-color:aqua;
+    color:blue;
+
+
+
+ } */
+  /* p{
+    border:10px solid rgb(163, 157, 29);
+    background-color:black;
+    padding:100px;
+    margin:20px;
+     width : 400px;
+  } */
+/* Removed broad div rule to avoid colliding with component styles */
+
+/* Card component styles */
+.card-container{
+    display:flex;
+    gap:1.25rem;
+    flex-wrap:wrap;
+    justify-content:center;
+    padding:1.5rem;
+}
+.card{
+    width: 320px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    overflow: hidden;
+    display:flex;
+    flex-direction:column;
+    transition: transform 200ms ease, box-shadow 200ms ease;
+    border: 1px solid rgba(0,0,0,0.06);
+}
+.card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 14px 36px rgba(0,0,0,0.12);
+}
+.card-image{
+    width:100%;
+    height: auto;
+    display:block;
+}
+.card-content{
+    padding: 1rem;
+    flex: 1 1 auto;
+}
+.card-title{
+    margin:0 0 0.5rem 0;
+    font-size: 1.125rem;
+    color:#111827;
+}
+.card-desc{
+    margin:0 0 0.75rem 0;
+    color:#4b5563;
+    font-size:0.95rem;
+    line-height:1.4;
+}
+.card-meta{
+    font-weight:600;
+    color:#0f766e;
+    margin-top:0.25rem;
+}
+.card-actions{
+    display:flex;
+    gap:0.5rem;
+    padding: 0.75rem;
+    border-top: 1px solid rgba(0,0,0,0.04);
+    background: #fafafa;
+    justify-content: flex-end;
+}
+.btn{
+    padding:0.5rem 0.9rem;
+    border-radius:8px;
+    border: none;
+    cursor: pointer;
+    font-weight:600;
+}
+.btn-primary{
+    background:#0ea5a4;
+    color:white;
+}
+.btn-outline{
+    background:transparent;
+    border:1px solid rgba(0,0,0,0.08);
+    color:#111827;
+}
+
+@media (max-width:480px){
+    .card-container{
+        flex-direction:column;
+        padding:1rem;
+        align-items:center;
+    }
+    .card{
+        width:100%;
+        max-width:420px;
+    }
+}
+ 

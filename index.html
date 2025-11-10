@@ -7,15 +7,66 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ipsa cumque doloribus vero aperiam maxime eos iste? Adipisci consequuntur at eaque excepturi voluptatum magnam autem nihil nostrum exercitationem vitae. Quae.</p>
+    <!--  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ipsa cumque doloribus vero aperiam maxime eos iste? Adipisci consequuntur at eaque excepturi voluptatum magnam autem nihil nostrum exercitationem vitae. Quae.</p>
     <p class = "p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque optio cupiditate quis, ipsum numquam beatae, adipisci ducimus non earum tenetur rem rerum accusamus quos amet sed, reprehenderit facere in reiciendis.</p>
-    <p class ="p" id="jk">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima, cumque?</p>
+    <p class ="p" id="jk">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima, cumque?</p> -->
 
     <!-- rem: this unit is relative to the fontsize of the parent size
      em:this unit is relative to the font size of the partent element
      %: this unit is relative to the font size of the parent element
-     . s,maller and -->
-     
+     .
+     padding -> space inside the element( between content and border).
+     ex-> padding: 10px;( all sides) [top right bottom left]
+     padding:10px 20px;(top-bottom,left-right)
+     padding: 10px 15px 20px 25px;(top right bottom left) -->
+     <!-- <div class="container">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore aut dicta nulla doloribus dolore incidunt, architecto sint autem facere quo accusamus! Eius culpa voluptate fugiat enim praesentium velit temporibus qui.
+     </div> -->
+     <!-- <div class="container"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic nulla similique maxime minus cumque commodi, dolor dolores quidem laudantium tempora facere iste doloribus exercitationem dolore tempore possimus. Quam, nihil corrupti.</p></div>
+    <div class="container"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti, assumenda.</p></div>
+    <div class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, vel.</div>
+     <div class="container"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad expedita vero veritatis excepturi ipsam molestias odio mollitia obcaecati eos accusantium.</p></div> -->
+
+
+
+     <!-- design a web page, which uses padding , margin,and border in external css -->
+
+
+     <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, nulla?</p> -->
+
+     <!-- <div><h3>display:block(headings/paragraphs)</h3><h1>Amazon - Online Shoping</h1><h5>This is a full-widthparagraph like a blog or product description.</h5></div> -->
+
+    <main class="page">
+        <h1>Example Card Component</h1>
+        <section class="card-container">
+            <article class="card" aria-label="Product card">
+                <img src="https://via.placeholder.com/400x250.png?text=Product+Image" alt="Placeholder product image" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Product Title</h2>
+                    <p class="card-desc">A short description of the product. It highlights key features and value in one or two lines.</p>
+                    <div class="card-meta">From $19.99</div>
+                </div>
+                <div class="card-actions">
+                    <button class="btn btn-primary">Buy</button>
+                    <button class="btn btn-outline">Details</button>
+                </div>
+            </article>
+            <!-- Duplicate to show layout (optional) -->
+            <article class="card" aria-label="Product card example 2">
+                <img src="https://via.placeholder.com/400x250.png?text=Another+Image" alt="Placeholder product image" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Another Item</h2>
+                    <p class="card-desc">Short description for the second card. Useful for galleries and product lists.</p>
+                    <div class="card-meta">From $29.99</div>
+                </div>
+                <div class="card-actions">
+                    <button class="btn btn-primary">Buy</button>
+                    <button class="btn btn-outline">Details</button>
+                </div>
+            </article>
+        </section>
+    </main>
+
 
 </body>
 </html>
