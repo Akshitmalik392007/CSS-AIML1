@@ -31,90 +31,27 @@ div{
     margin:20px;
      width : 400px;
   } */
-/* Removed broad div rule to avoid colliding with component styles */
+/* div{
+    border: 2px solid black;
+    width: 800px
+} */
+ /* div{
+    border: 2px solid black;
+ } */
 
-/* Card component styles */
-.card-container{
-    display:flex;
-    gap:1.25rem;
-    flex-wrap:wrap;
-    justify-content:center;
-    padding:1.5rem;
-}
-.card{
-    width: 320px;
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-    overflow: hidden;
-    display:flex;
-    flex-direction:column;
-    transition: transform 200ms ease, box-shadow 200ms ease;
-    border: 1px solid rgba(0,0,0,0.06);
-}
-.card:hover{
-    transform: translateY(-6px);
-    box-shadow: 0 14px 36px rgba(0,0,0,0.12);
-}
-.card-image{
-    width:100%;
-    height: auto;
-    display:block;
-}
-.card-content{
-    padding: 1rem;
-    flex: 1 1 auto;
-}
-.card-title{
-    margin:0 0 0.5rem 0;
-    font-size: 1.125rem;
-    color:#111827;
-}
-.card-desc{
-    margin:0 0 0.75rem 0;
-    color:#4b5563;
-    font-size:0.95rem;
-    line-height:1.4;
-}
-.card-meta{
-    font-weight:600;
-    color:#0f766e;
-    margin-top:0.25rem;
-}
-.card-actions{
-    display:flex;
-    gap:0.5rem;
-    padding: 0.75rem;
-    border-top: 1px solid rgba(0,0,0,0.04);
-    background: #fafafa;
-    justify-content: flex-end;
-}
-.btn{
-    padding:0.5rem 0.9rem;
-    border-radius:8px;
-    border: none;
-    cursor: pointer;
-    font-weight:600;
-}
-.btn-primary{
-    background:#0ea5a4;
-    color:white;
-}
-.btn-outline{
-    background:transparent;
-    border:1px solid rgba(0,0,0,0.08);
-    color:#111827;
-}
+ .container {
+    
+    height: 600px;
+    width:800px;
+    background-color: blueviolet;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
 
-@media (max-width:480px){
-    .card-container{
-        flex-direction:column;
-        padding:1rem;
-        align-items:center;
-    }
-    .card{
-        width:100%;
-        max-width:420px;
-    }
-}
- 
+
+ }
+ .item{
+    height:100px;
+    width:100px;
+    background-color: aqua;
+    margin:10px;
+ }
