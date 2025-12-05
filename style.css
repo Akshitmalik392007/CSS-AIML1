@@ -40,18 +40,30 @@ div{
  } */
 
  .container {
-    
+    display: flex;
     height: 600px;
-    width:800px;
+    width:1300px;
     background-color: blueviolet;
     /* flex-direction: row; */
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    /* justify-content: center;
+    align-items: flex-end;
+    align-content:  space-between; */
+    gap: 20px;
+    row-gap: 20px;
+    column-gap: 30px;
 
 
  }
  .item{
     height:100px;
-    width:100px;
+    width:200px;
     background-color: aqua;
     margin:10px;
+   flex-grow: 1;
+ }
+ .item2{
+   order: -1;
+flex-grow:2;
+align-self: flex-end;
  }
